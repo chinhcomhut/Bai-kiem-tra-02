@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 02</title>
+</head>
+<body>
+<script>
+    function arr() {
+        let n = Number(prompt("Enter the value off array"));
+        let arr = new Array();
+        for (let i = 0; i < n; i++) {
+            let pt = Number(prompt("Enter every of array" + i));
+            arr[i] = pt;
+
+        }
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 == 1) {
+                sum = sum + arr[i];
+            }
+        }
+        document.write("Mang :" + arr + "<br/>");
+        document.write("sum the odd elements in the array:" + sum);
+    }
+
+    arr();
+</script>
+</body>
+</html>
